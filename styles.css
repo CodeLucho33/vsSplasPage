@@ -1,3 +1,9 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #404040;
@@ -44,13 +50,26 @@ h2 {
     color: #fff;
     background-color: #9480e4;
 
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     min-height: 250px;
     background-image: url('/images/intro-bg.png');
     background-size: cover;
 }
 
+.top-text {
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding-top: 0.25em;
+    border-top: 5px solid;
+    order:-1;
+}
+
+.fine-print {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #858585;
+}
 
 /* =================
     Flex containers
@@ -87,6 +106,35 @@ h2 {
     Form
    ================= */
 
+input {
+    font-family: inherit;
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 0.75em;
+    border: 2px solid #d1d5db;
+    border-radius: 5px;
+}
+
+
+.btn{
+    width: 100%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: #816fca ;
+    padding: 1em;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.btn:hover{
+    background: #858585;
+}
+input:focus {
+    outline: none;
+    border-color: #8a71ec;
+    background-color: #e6e8e6;
+}
 
 /* =================
     Media queries 
